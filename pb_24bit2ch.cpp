@@ -5,7 +5,7 @@
 #include <thread>
 #include <alsa/asoundlib.h>
 
-#define BUFFER_SIZE 65536
+#define BUFFER_SIZE 8192
 #define BUFFER_SIZE_BYTES (4*BUFFER_SIZE)
 #define BUFFER_SIZE_PER_CHANNEL (BUFFER_SIZE/2)
 #define BYTE_BUFFER_SIZE (3*BUFFER_SIZE_BYTES/4)
