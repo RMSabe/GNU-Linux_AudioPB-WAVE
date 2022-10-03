@@ -145,13 +145,13 @@ int main(int argc, char **argv)
 	}
 
 	cmd_line += WAVE_FILE_DIR;
-	cmd_line += " ";
+	cmd_line += ' ';
 	cmd_line += AUDIO_DEV;
-	cmd_line += " ";
+	cmd_line += ' ';
 	cmd_line += std::to_string(audio_data_begin);
-	cmd_line += " ";
+	cmd_line += ' ';
 	cmd_line += std::to_string(audio_data_end);
-	cmd_line += " ";
+	cmd_line += ' ';
 	cmd_line += std::to_string(sample_rate);
 
 	system(cmd_line.c_str());
