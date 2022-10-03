@@ -40,7 +40,7 @@ int audio_file_get_params(void)
 	audio_file.read(header_info, 4096);
 	unsigned int byte_pos = 0;
 
-	//Error Check: Invalid Chunk ID
+	//Error Check: Invalid Chunk Signature
 	if(!compare_signature("RIFF", header_info, byte_pos)) return -1;
 
 	//Error Check: Invalid Format Signature
