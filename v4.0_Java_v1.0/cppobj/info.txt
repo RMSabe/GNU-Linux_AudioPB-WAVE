@@ -1,0 +1,2 @@
+C++ binary object files go here.
+
